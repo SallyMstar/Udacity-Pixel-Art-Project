@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sally's Pixel-Pro Art Maker!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Courgette|Tangerine">
+</head>
+  <body>
+    <h1>Lab: Pixel Art Maker</h1>
+    <div class="wrapper">
+      <form id="sizePicker">
+          <div class="label">Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+             Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+          </div>
+          <h3 class="canvasLabel">
+            Design Canvas:
+              Pick A Color
+            <input type="color" id="colorPicker">
+        </h3>
+    </div>
+          <input type="submit" id="submit" value="submit" class="buttonText">
+          <input type="button" id="reset" value="resize" class="buttonText">
+        <div class="tableWrap">
+              <table id="pixelCanvas">
+                <tr>
+                </tr>
+              </table>
+        </div>
+      </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+
+</body>
+</html>
